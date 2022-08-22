@@ -142,4 +142,11 @@ Each SDK must provide examples using at least HTTP transport of:
 - Encoding and sending a composed Event.
 - Receiving and decoding an Event.
 
+
+## Feature Support
+
+Each SDK must update the following "support table" periodically to ensure
+they accurately the status of each SDK's support for the stated features.
+
+### Dummy SDK
 <img src="https://github.com/sasha-tkachev/dummy-cloudevents-sdk/blob/main/sdk.svg" data-canonical-src="https://github.com/sasha-tkachev/dummy-cloudevents-sdk/blob/main/sdk.svg" width="1024" height="400" ></img>
