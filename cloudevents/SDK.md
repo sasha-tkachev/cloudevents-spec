@@ -159,6 +159,6 @@ they accurately the status of each SDK's support for the stated features.
 
 |      |      |      |
 | ---- | ---- | ---- |
-|      |  <img src="https://github.com/sasha-tkachev/dummy-cloudevents-sdk/blob/main/my.svg" data-canonical-src="https://github.com/sasha-tkachev/dummy-cloudevents-sdk/blob/main/my.svg" width="200" height="400" ></img>    |   <img src="https://github.com/sasha-tkachev/dummy-cloudevents-sdk/blob/main/your.svg" data-canonical-src="https://github.com/sasha-tkachev/dummy-cloudevents-sdk/blob/main/your.svg" width="200" height="400" ></img>   |
+|      |  <img src="https://github.com/sasha-tkachev/dummy-cloudevents-sdk/blob/main/my.svg?" data-canonical-src="https://github.com/sasha-tkachev/dummy-cloudevents-sdk/blob/main/my.svg?" width="200" height="400" ></img>    |   <img src="https://github.com/sasha-tkachev/dummy-cloudevents-sdk/blob/main/your.svg?" data-canonical-src="https://github.com/sasha-tkachev/dummy-cloudevents-sdk/blob/main/your.svg?" width="200" height="400" ></img>   |
 
 
