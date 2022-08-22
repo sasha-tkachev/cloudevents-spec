@@ -148,5 +148,9 @@ Each SDK must provide examples using at least HTTP transport of:
 Each SDK must update the following "support table" periodically to ensure
 they accurately the status of each SDK's support for the stated features.
 
-### Dummy SDK
+### My Dummy SDK
+<a href="https://github.com/sasha-tkachev/dummy-cloudevents-sdk"><img src="https://github.com/sasha-tkachev/dummy-cloudevents-sdk/blob/main/sdk.svg" data-canonical-src="https://github.com/sasha-tkachev/dummy-cloudevents-sdk/blob/main/sdk.svg" width="1024" height="400" ></img></a>
+### Your Dummy SDK
+<a href="https://github.com/sasha-tkachev/dummy-cloudevents-sdk"><img src="https://github.com/sasha-tkachev/dummy-cloudevents-sdk/blob/main/sdk.svg" data-canonical-src="https://github.com/sasha-tkachev/dummy-cloudevents-sdk/blob/main/sdk.svg" width="1024" height="400" ></img></a>
+### His Dummy SDK
 <a href="https://github.com/sasha-tkachev/dummy-cloudevents-sdk"><img src="https://github.com/sasha-tkachev/dummy-cloudevents-sdk/blob/main/sdk.svg" data-canonical-src="https://github.com/sasha-tkachev/dummy-cloudevents-sdk/blob/main/sdk.svg" width="1024" height="400" ></img></a>
