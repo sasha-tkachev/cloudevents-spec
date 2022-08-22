@@ -141,3 +141,5 @@ Each SDK must provide examples using at least HTTP transport of:
 - Composing an Event.
 - Encoding and sending a composed Event.
 - Receiving and decoding an Event.
+
+![sdk](https://github.com/sasha-tkachev/dummy-cloudevents-sdk/blob/main/sdk.svg)
