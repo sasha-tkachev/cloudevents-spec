@@ -142,4 +142,5 @@ Each SDK must provide examples using at least HTTP transport of:
 - Encoding and sending a composed Event.
 - Receiving and decoding an Event.
 
-<img src="https://github.com/sasha-tkachev/dummy-cloudevents-sdk/blob/main/sdk.svg" width="200" height="400" ></img>
+<img src="https://github.com/sasha-tkachev/dummy-cloudevents-sdk/blob/main/sdk.svg
+" width="200" height="400" ></img>
