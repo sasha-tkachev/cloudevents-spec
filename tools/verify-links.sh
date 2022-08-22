@@ -274,16 +274,19 @@ for file in ${mdFiles}; do
         # Find all section headers in the file.
         # Remove leading & trailing spaces.
         # Lower case it.
+        # Drop all punct
         # Convert spaces to "-".
-        # Drop all non alphanumeric chars.
         # Twiddle section anchor if we've seen it before.
         grep "^[[:space:]]*#" < ${fullpath} | \
           sed 's/[[:space:]]*##*[[:space:]]*//' | \
           sed 's/[[:space:]]*$//' | \
           tr '[:upper:]' '[:lower:]' | \
+          tr '-' 'Z' | \
+          sed "s/[[:punct:]]//g" | \
+          tr 'Z' '-' | \
           sed 's/\[\([^\[]*\)\](\([^()]*\))/\1/' | \
-          sed "s/  */-/g" | \
-          sed "s/[^-a-zA-Z0-9]//g" | while read section ; do
+          sed "s/[[:space:]][[:space:]]*/-/g" | \
+          while read section ; do
             # If we haven't used this exact anchor before just use it now
             if [[ "${used}" != *" ${section} "* ]]; then
               anchor=${section}
