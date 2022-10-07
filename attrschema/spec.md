@@ -1,0 +1,1 @@
+# CloudEvent Attributes Schema - Version 0.1-wip
