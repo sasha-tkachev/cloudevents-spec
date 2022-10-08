@@ -1,0 +1,90 @@
+type: object
+properties:
+    title:
+        type: string
+    description:
+        type: string
+    attributes:
+        type: object
+        properties:
+            id:
+                type: object
+                properties:
+                    type:
+                        const: string
+                    required:
+                        const: true
+            source:
+                type: object
+                properties:
+                    type:
+                        const: uri-reference
+                    required:
+                        const: true
+            specversion:
+                type: object
+                properties:
+                    type:
+                        const: string
+                    required:
+                        const: true
+            type:
+                type: object
+                properties:
+                    type:
+                        const: string
+                    required:
+                        const: true
+            datacontenttype:
+                type: object
+                properties:
+                    type:
+                        const: string
+            dataschema:
+                type: object
+                properties:
+                    type:
+                        const: uri
+            subject:
+                type: object
+                properties:
+                    type:
+                        const: string
+            time:
+                type: object
+                properties:
+                    type:
+                        const: timestamp
+        propertyNames:
+            pattern: "^[a-z0-9]+$"
+        patternProperties:
+            "^.+$":
+                type: object
+                properties:
+                    type: # ce-type of the attribute
+                        type: string
+                        enum:
+                            - boolean
+                            - integer
+                            - string
+                            - binary
+                            - uri
+                            - uri-reference
+                            - timestamp
+                    required:
+                        type: boolean
+                    pattern:
+                        type: string
+                    title:
+                        type: string
+                    description:
+                        type: string
+                    specurl:
+                        type: string
+                    examples:
+                        type: array
+                        items:
+                            type: string
+                required:
+                    - "type"
+        minProperties: 1
