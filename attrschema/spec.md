@@ -63,6 +63,32 @@ Attrschema validates attributes with values of the given types.
 ### Context Attributes
 Context Attributes [as defined in the CloudEvents specification][context-attributes]
 
+## Versions
+The Attrschema Specification is versioned using 
+[Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) (semver) and 
+follows the semver specification.
+
+The `major.minor` portion of the semver (for example `1.0`) SHALL designate the 
+Attrschema  feature set. Typically, `.patch` versions address errors in this document, 
+not the feature set. Tooling which supports Attrschema `1.0` SHOULD be compatible with 
+all Attrschema `1.0.*` versions. The patch version SHOULD NOT be considered by tooling, 
+making no distinction between `1.0.0` and `1.0.1` for example.
+
+Each new minor version of the Attrschema Specification SHALL allow any Attrschema 
+document that is valid against any previous minor version of the Specification, 
+within the same major version, to be updated to the new Specification version with 
+equivalent semantics. Such an update MUST only require changing the `attrschema` 
+property to the new minor version.
+
+For example, a valid Attrschema `1.0.0` document, upon changing its `attrschema` property 
+to `1.1.0`.
+`1.0`, SHALL be a valid Attrschema `1.1.0` document, semantically equivalent to the 
+original 
+Attrschema `1.0.0` document. New minor versions of the Attrschema Specification MUST be 
+written to ensure this form of backward compatibility.
+
+An Attrschema document compatible with Attrschema `1.*.*` MUST contain a required 
+`attrschema` field which designates the semantic version of the Attrschema that it uses. 
 
 ### Attrschema Objects and Keywords
 Object properties that are applied to the instance are called keywords, 
