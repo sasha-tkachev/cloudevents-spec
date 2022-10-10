@@ -55,4 +55,27 @@ Attrschema validates attributes with values of the given types.
 ### Context Attributes
 Context Attributes [as defined in the CloudEvents specification][context-attributes]
 
+### Attrschema Document
+An Attrschema document, or simply a schema, is a JSON document used to describe 
+attributes of a CloudEvent.
+
+A JSON Schema MUST be an object.
+
+### Attrschema Objects and Keywords
+Object properties that are applied to the instance are called keywords, 
+or schema keywords. Broadly speaking, keywords fall into one of 2 categories:
+
+- assertions:
+  - produce a boolean result when applied to a CloudEvent
+- annotations
+  - attach information to an instance for application use
+  
+Keywords which are properties within the same schema object are referred to as adjacent keywords.
+
+An Attrschema MAY contain properties which are not schema keywords. 
+Unknown keywords SHOULD be treated as annotations, where the value of the keyword is 
+the value of the annotation.
+
+An empty schema is an Attrschema with no properties, or only unknown properties.
+
 [context-attributes]: ../cloudevents/spec.md#context-attributes
