@@ -4,6 +4,11 @@ properties:
         type: string
     description:
         type: string
+    extensions:
+        type: array
+        items:
+            type: string
+
     attributes:
         type: object
         properties:
@@ -73,6 +78,11 @@ properties:
                             - timestamp
                     required:
                         type: boolean
+                    const:
+                        type:
+                            - string
+                            - integer
+                            - boolean
                     pattern:
                         type: string
                     title:
@@ -84,7 +94,10 @@ properties:
                     examples:
                         type: array
                         items:
-                            type: string
+                            type:
+                                - string
+                                - integer
+                                - boolean
                 required:
                     - "type"
         minProperties: 1
