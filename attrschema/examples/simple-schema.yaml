@@ -1,0 +1,15 @@
+attrschema: "1.0.0"
+title: Simple schema
+description: This is a simple schema
+extensions:
+  - https://github.com/cloudevents/spec/blob/main/cloudevents/extensions/sequence.yaml
+  - https://mysite/my.schema.json
+attributes:
+  source:
+    type: uri-reference
+    pattern: "^urn:uuid:[0-9a-fA-F-]+$"
+  dataschema:
+    type: uri
+    required: true
+    const: http://mysite.com/data-schema
+
