@@ -34,6 +34,14 @@ those attributes with additional information.
 
 
 ## Definitions
+### Attrschema Document
+An Attrschema document, or simply a schema, is a JSON document used to describe 
+attributes of a CloudEvent.
+
+A JSON Schema MUST be an object.
+
+An Attrschema definition uses and conforms to the Attrschema Specification.
+
 ### CloudEvent
 Event [as defined in the CloudEvents specification](../cloudevents/spec.md#event)
 
@@ -55,11 +63,6 @@ Attrschema validates attributes with values of the given types.
 ### Context Attributes
 Context Attributes [as defined in the CloudEvents specification][context-attributes]
 
-### Attrschema Document
-An Attrschema document, or simply a schema, is a JSON document used to describe 
-attributes of a CloudEvent.
-
-A JSON Schema MUST be an object.
 
 ### Attrschema Objects and Keywords
 Object properties that are applied to the instance are called keywords, 
