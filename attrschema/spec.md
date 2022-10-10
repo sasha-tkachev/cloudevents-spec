@@ -69,7 +69,6 @@ or schema keywords. Broadly speaking, keywords fall into one of 2 categories:
   - produce a boolean result when applied to a CloudEvent
 - annotations
   - attach information to an instance for application use
-  
 Keywords which are properties within the same schema object are referred to as adjacent keywords.
 
 An Attrschema MAY contain properties which are not schema keywords. 
@@ -77,5 +76,16 @@ Unknown keywords SHOULD be treated as annotations, where the value of the keywor
 the value of the annotation.
 
 An empty schema is an Attrschema with no properties, or only unknown properties.
+
+## Keyword Behaviors
+Attrschema keywords fall into several general behavior categories.
+Assertions validate that an instance satisfies constraints, producing a boolean result.
+Annotations attach information that applications may use in any way they see fit.
+
+Evaluating a CloudEvent against a schema involves processing all-of the keywords in 
+the schema against the appropriate attribute within the CloudEvent. Typically, the 
+appropriate attribute in the CloudEvent is evaluated against the assertion and 
+annotation keywords in the schema object, and their results are gathered into the 
+parent schema according to the rules of the applicator.
 
 [context-attributes]: ../cloudevents/spec.md#context-attributes
